@@ -3,15 +3,16 @@
     width: 20%;
     max-height: 20em;
     right: var(--margin-left-right);
-    bottom:27em;
+    bottom:35em;
 
     overflow: hidden;
 
     white-space: normal;
+    border-radius: 10px;
 }
 
 #chat_box .chat-msg {
-    background: var(--color_background_chat);
+    background: var(--color_background_default);
     margin: 0;
     padding: 0.25em;
     animation: hideAnimation 0.5s ease 9.5s;
