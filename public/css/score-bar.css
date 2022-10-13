@@ -2,25 +2,23 @@
 #score_bar {
     display: grid;
     grid-template-columns: 
-        2.5em   /*left avatar*/
+        4em   /*left avatar*/
         9em /*left name*/
-        2.5em /*left score*/
+        3em /*left score*/
         3.3em /*time*/
-        2.5em /*right score*/
+        3em /*right score*/
         9em /*right name*/
-        2.5em;  /*right avatar*/
+        4em;  /*right avatar*/
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     top:0;
     margin-top:10px;
-    
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .team-name {
     background-color: var(--color_background_default);
-    font-size: 0.7em;
 }
 
 .score-team {
@@ -31,23 +29,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.5rem;
+
     padding: 5px 5px 5px 5px;
 }
 
 #team_name_left {
     justify-content: end !important;
     padding-right: 0.3em !important;
+
+    margin-top: 1rem;
+    /*border-radius: 10px 0 0 10px;*/
+    height: 3rem;
 }
 
 #team_name_right {
     justify-content: start !important;
     padding-right: 0.3em !important;
+
+    margin-top: 1rem;
+    /*border-radius: 0 10px 10px 0;*/
+    height: 3rem;
+}
+
+#score_team_left, #score_team_right{
+    font-size: 2em;
+}
+
+#score_team_left{
+    border-radius: 10px 0 0 10px;
+
+}
+
+#score_team_right{
+    border-radius: 0 10px 10px 0;
 }
 
 #team_left_avatar img,
 #team_right_avatar img {
-    width: 2.5em;
+    border-radius: 10px;
+    width: 4em;
     height: auto;
     position: absolute;
     top: 0%;
@@ -66,12 +86,14 @@
 
 #time {
     background-color: var(--color_background_default);
+    height: 5rem;
 }
 
 #defuse {
     grid-column: 4 / 5;
     grid-row: 2/3;
     background: rgba(0, 0, 0, 0);
+    border-radius: 0 0 10px 10px;
 }
 
 #round_wins {
@@ -94,6 +116,7 @@
 #round_wins.visible {
     visibility: visible;
     max-height: 20em !important;
+    border-radius: 10px;
 }
 
 #round_wins > div {
@@ -113,7 +136,7 @@
 
 .dot-win {
     width: 0.3em;
-    height: 0.6em;
+    height: 0.8em;
     border-radius: 25%;
     display: inline-block;
 }
@@ -135,11 +158,11 @@
 }
 
 .map-win.n1 {
-    top: 0.5em;
+    top: 1.3em;
 }
 
 .map-win.n2 {
-    bottom: 0.5em;
+    bottom: 1.3em;
 }
 
 .map-win.n1.l{
@@ -166,6 +189,7 @@
     margin-top: 10px;
     right: var(--margin-left-right);
     transition: top 2s linear 0.5s;
+    border-radius: 10px;
 }
 
 #maps td,

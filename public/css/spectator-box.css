@@ -10,7 +10,7 @@
 
     width: 25em;
 
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 #spec_avatar {
@@ -23,6 +23,7 @@
     height: auto;
     position: fixed;
     bottom: 0%;
+    border-radius: 10px 10px 0 10px;
 }
 
 #spec_health img {
@@ -49,6 +50,7 @@
     2em /* round-kills */
     2.5em /* defuse/bomb */
     4em /* nades */;
+    border-radius: 0 10px 0 0;
 }
 
 .spectator-box-row.two {
@@ -57,6 +59,7 @@
     4em /* kevlar */
     repeat(3, 0.8em 1.4em) /* K,D,A */
     1fr /* ammo */;
+    border-radius: 0 0 10px 0;
 }
 
 .spectator-box-row div {

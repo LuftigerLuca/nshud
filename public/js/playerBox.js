@@ -89,6 +89,7 @@ function updateHealthBar(id, h, team_t = false, right2left = false) {
     const dirDead = right2left ? '270deg' : '90deg';
 
     const bg_dead = `linear-gradient(${dirDead}, ${colors.dead1} 50%, ${colors.dead2} 100%`;
+    const bg_default = colors.background_default;
 
     $(`#row1_background_${id}`).css("background", colors.player_box);
     $(`#row1_teamcolor_${id}`).css("background", `linear-gradient(${dir}, ${c1} 30%, ${c2} 100%`);
@@ -102,6 +103,9 @@ function updateHealthBar(id, h, team_t = false, right2left = false) {
     } else if (h === 100) {
         $(`#row1_teamcolor_${id}`).css("visibility", "visible");
         $(`#row1_red_${id}`).css("visibility", "visible");
+
+        $(`#row1_background_${id}`).css("background", bg_default);
+        $(`#player_${id}_tr2`).css("background", bg_default);
     }
 
     $(`#row1_teamcolor_${id}`).css("width", `${h}%`);

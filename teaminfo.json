@@ -1,10 +1,10 @@
 {
     "team1": {
-        "name" : "team 1",
+        "name" : "Team 1",
         "avatar": "avatars/nearlyskillless.jpg"
     },
     "team2": {
-        "name" : "team 2",
+        "name" : "Team 2",
         "avatar": "avatars/nearlyskillless.jpg"
     },
     "switch_teams": "0",
