@@ -1,25 +1,25 @@
 {
     "team1": {
         "name" : "Team 1",
-        "avatar": "avatars/nearlyskillless.jpg"
+        "avatar": "avatars/nearlyskillles.jpg"
     },
     "team2": {
-        "name" : "Team 2",
-        "avatar": "avatars/nearlyskillless.jpg"
+        "name" : "CREEPZ ES.",
+        "avatar": "avatars/nearlyskillles.jpg"
     },
     "switch_teams": "0",
 
     "maps": {
         "1": {
-            "name": "Nuke",
-            "pick": "2",
-            "win": "1",
-            "score": "16:14"
-        },
-        "2": {
-            "name": "Inferno",
+            "name": "Mirage",
             "pick": "1",
             "win": "playing",
+            "score": "-"
+        },
+        "2": {
+            "name": "Vertigo",
+            "pick": "2",
+            "win": "-",
             "score": "-"
         }
     }
